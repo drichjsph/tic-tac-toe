@@ -121,7 +121,7 @@ export default function TicTacToeBoard() {
       ) : winner ? (
         <h2 className="text-2xl mb-4 font-bold text-green-600">🎉 Winner: {winner} 🎉</h2>
       ) : (
-        <h2 className="text-2xl mb-4 font-bold text-yellow-500">😮 It'&apos;s a Draw!</h2>
+        <h2 className="text-2xl mb-4 font-bold text-yellow-500">😮 It&apos;s a Draw!</h2>
       )}
 
       {/* Game Board */}
