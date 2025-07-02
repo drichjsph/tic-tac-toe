@@ -31,7 +31,7 @@ export default function TicTacToeBoard() {
   ];
 
   const checkWinner = (newBoard: string[]) => {
-    for (let combination of winningCombinations) {
+    for (const combination of winningCombinations) {
       const [a, b, c] = combination;
       if (newBoard[a] && newBoard[a] === newBoard[b] && newBoard[a] === newBoard[c]) {
         setWinningCells(combination);
@@ -121,7 +121,7 @@ export default function TicTacToeBoard() {
       ) : winner ? (
         <h2 className="text-2xl mb-4 font-bold text-green-600">🎉 Winner: {winner} 🎉</h2>
       ) : (
-        <h2 className="text-2xl mb-4 font-bold text-yellow-500">😮 It's a Draw!</h2>
+        <h2 className="text-2xl mb-4 font-bold text-yellow-500">😮 It'&apos;s a Draw!</h2>
       )}
 
       {/* Game Board */}
